@@ -7,6 +7,7 @@ public class Persona {
     public int fechaNacimientoPersona;
     public int fechaActual;
     public int edadPersona;
+    public int añosDeEdadParaSerMayor = 18;
 
     public Persona(String nombre, String apellido,String cedula,int fechaActual,int fechaNacimientoPersona) {
         this.nombrePersona = nombre;
@@ -62,6 +63,14 @@ public class Persona {
         return this.edadPersona;
     }
 
+    public String esPersonaMayorDeEdad(){
+        if (this.edadPersona >= añosDeEdadParaSerMayor) {
+            return "es mayor de edad";
+        }else if (this.edadPersona < añosDeEdadParaSerMayor) {
+        }
+        return "es menor de edad";
+    }
+
     public void setEdadPersona(int edadPersona) {
         this.edadPersona = edadPersona;
     }
@@ -71,6 +80,8 @@ public class Persona {
         return ("Nombre:    "+getNombrePersona()+ "\n" +
                 "Apellido:  "+getApellidoPersona()+ "\n" +
                 "Cedula:    "+getCedulaPersona()+ "\n" +
-                "Edad:      "+getEdadPersona()+" años");
+                "Edad:      "+getEdadPersona()+" años")+
+                "\n"+getNombrePersona()+ " "+getApellidoPersona()+" "
+                + esPersonaMayorDeEdad();
     }
 }
