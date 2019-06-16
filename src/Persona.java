@@ -77,11 +77,12 @@ public class Persona {
 
     @Override
     public String toString() {
-        return ("Nombre:    "+getNombrePersona()+ "\n" +
-                "Apellido:  "+getApellidoPersona()+ "\n" +
-                "Cedula:    "+getCedulaPersona()+ "\n" +
-                "Edad:      "+getEdadPersona()+" años")+
-                "\n"+getNombrePersona()+ " "+getApellidoPersona()+" "
-                + esPersonaMayorDeEdad();
+        return ("------------------------------------------------------------------------\n"+
+                "[      Nombre:    "+getNombrePersona()+ "\n" +
+                "[      Apellido:  "+getApellidoPersona()+ "\n" +
+                "[      Cedula:    "+getCedulaPersona()+"\n" +
+                "[      Edad:      "+getEdadPersona()+" años\n")+
+                "[      "+getNombrePersona()+ " "+getApellidoPersona()+" "+ esPersonaMayorDeEdad()+"\n"+
+                "------------------------------------------------------------------------";
     }
 }
