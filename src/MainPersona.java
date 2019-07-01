@@ -21,6 +21,12 @@ public class MainPersona {
         System.out.println(person_3);
         person_3.toString();
 
+        //persona 4
+        Persona person_4 = new Persona("Ela","Calus",
+                "0804322093",2019,2012);
+        System.out.println(person_4);
+        person_4.toString();
+
 
 
 

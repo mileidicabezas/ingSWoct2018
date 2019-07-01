@@ -1,5 +1,3 @@
-import java.util.Date;
-
 public class Persona {
     public String nombrePersona;
     public String apellidoPersona;
